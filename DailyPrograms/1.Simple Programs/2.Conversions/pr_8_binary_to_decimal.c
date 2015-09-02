@@ -1,5 +1,5 @@
 // Program # 8. Binary to decimal
-// Receive an integer and converts to decimal
+// Receive an integer (binary) and converts to decimal
 
 #include <stdio.h>
 
