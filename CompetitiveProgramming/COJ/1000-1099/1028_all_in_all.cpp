@@ -7,6 +7,7 @@
 using namespace std;
 
 int main(){
+
 	string word, encrypted, output;
 	output = "";
 	for(int i = 0; i <= 20; i++){
