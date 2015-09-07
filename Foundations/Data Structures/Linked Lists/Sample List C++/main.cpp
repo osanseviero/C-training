@@ -1,8 +1,3 @@
-/*
-   Gilberto Echeverria
-
-   Sample program to use the linked list library
-*/
 
 #include <iostream>
 #include "LinkedList.h"

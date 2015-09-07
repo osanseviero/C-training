@@ -1,9 +1,3 @@
-/*
-   Gilberto Echeverria
-
-   Implementation of the Linked list
-*/
-
 #include <iostream>
 #include "Node.h"
 
@@ -223,8 +217,9 @@ Node<T> * LinkedList<T>::removeItemAt(int position)
     }
     else
     {
-        // Keep the previous item befor the tail
+        // Keep the previous item before the tail
         item = previous->getNext();
+        
         // Loop to search for the item
         while (index < position)
         {
