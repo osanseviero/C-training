@@ -15,9 +15,7 @@ strlen1(const char *s)
 }
 int main(int argc, char **argv)
 {
-	char s[3];
-	s[0] = 'a';
-	s[1] = 'b';
+	char s[] = "hello";
 	int length = strlen1(s);
 	printf("%d\n",length);
     return 0;

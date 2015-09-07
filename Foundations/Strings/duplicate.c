@@ -21,10 +21,7 @@ char * strdup(const char *s)
 
 int main(int argc, char **argv)
 {
-	char s1[3];
-	s1[0] = 'a';
-	s1[1] = 'b';
-	s1[2] = '\0';
+	char s1[] = "abcdef";
 
 	char * a;
 	a = strdup(s1);
