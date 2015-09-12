@@ -9,19 +9,20 @@ void swap(int a[], int b, int c){
 	a[c] = temp;
 }
 
-void selectionSort(int a[], int size){
-	// Go element by element
-	for(int i = 0; i<size-2;i++){
-		int min = i;
 
-		// Find smallest element
-		for(int j = i; j < size-1;j++){
-			if(a[j]<a[min]){
-				min = j;
+void bubbleSort(int a[], int size){
+	
+	for(int i = 1; i<size-1; i++){
+		int flag = 0;
+		for(int j=0; j<size-i-1; j++){
+			if(a[j] > a[j+1]){
+				swap(a,j,j+1);
+				flag = 1;
 			}
 		}
-		// Swap
-		swap(a,i, min);
+		if(flag==0){
+			break;
+		}
 	}
 	
 	
@@ -37,7 +38,7 @@ void printArray(int a[], int size){
 
 int main(){
 	int a[] = {2,7,4,1,5,3};
-	selectionSort(a,6);
+	bubbleSort(a,6);
 	printArray(a,6);
 
 
