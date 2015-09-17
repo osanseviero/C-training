@@ -17,7 +17,7 @@ int reverse(int A) {
     	rem = A%10;
     	result += to_string(rem);
     	A = A/10;
-    	if(stol(result)>2147483647 || stol(result)<-2147483647 ){
+    	if(stol(result)>2147483647 || stol(result)<=2147483647 ){
 			return 0;
 		}
     }

@@ -14,38 +14,28 @@ vector<vector<int> > prettyPrint(int n) {
     }
 
     end = (2*n) - 2;   
-    for(int i = 0; i < 2*n -1; i++){
-        
-        main.push_back(row);
-        if(i <= n/2){        
-            cout << i << " and start: " << start << " and end: " << end << endl;
-            for(int j=start+1; j < end;j++){
-                row[j] -= 1;
-            }
-            end--;
-            start++;
-            
-        }
-        for(int j=0; j < 2*n-1;j++){
-            cout << row[j] << " ";
-        } 
-        cout << std::endl;
-        if(i>n/2){
-            start--;
-            cout << i << " and start: " << start << " and end: " << end << endl;
-            end++;
-            for(int j=start; j < end;j++){
-                if(start<0){
-                    break;
-                }
-                row[j] += 1;
+    main.push_back(row);
 
-            }
-             
-            
+    for(int i = 1; i < ((2*n -1)/2)+1; i++){    
+        for(int j=start+1; j < end;j++){
+            row[j] -= 1;
         }
+        main.push_back(row);
+        end--;
+        start++;         
     }
 
+    for(int i = ((2*n -1)/2)+1; i < 2*n -1; i++){      
+        for(int j=start; j < end+1;j++){
+            if(start<0){
+                break;
+            }
+            row[j] += 1;
+        }
+        start--;
+        end++;
+        main.push_back(row);              
+    }
      return main;
 }
 
