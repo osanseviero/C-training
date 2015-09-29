@@ -6,25 +6,32 @@ class Node{
 		Node * next;
 };
 
+class List{
+	public:
+		Node*head;
+
+};
+
 
 int main(){
-	Node * A;
-	A = nullptr; // Empty list
+	List a;
+	a.head = nullptr;
 
 	Node * temp = new Node();
 	temp->data = 2;
 	temp->next = nullptr;
-	A = temp;
+	a.head = temp;
 
-	temp = new Node();
-	temp->data = 4;
-	temp->next = nullptr;
-	A->next = temp;
+	Node * temp2 = new Node();
+	temp2->data = 4;
+	temp2->next = nullptr;
+	a.head->next = temp2;
 
-	temp = A;
-	while(temp! = nullptr){
-		std::cout << temp->data << std::endl;
-		temp = temp->next;
+	Node * temp3 = new Node();
+	temp3 = a.head;
+	while(temp3 != nullptr){
+		std::cout << temp3->data << std::endl;
+		temp3 = temp3->next;
 	}
 
 	return 0;
