@@ -18,7 +18,7 @@ class MinStack
 
 MinStack::MinStack() {
     std::stack<int> s;
-std::stack<int> minS;
+    std::stack<int> minS;
 }
 
 void MinStack::push(int x) {

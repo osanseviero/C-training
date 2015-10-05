@@ -38,6 +38,9 @@ int evaluateExp(string expression){
 
 		// If s[i] is operator, pop two elements, use the operation, push it
 		if(isOperator(expression[i])){
+			cout << expression[i] << endl;
+			cout << S.top() << endl;
+
 			// Pop two elements
 			int op2 = S.top(); S.pop();
 			int op1 = S.top(); S.pop();
@@ -48,7 +51,6 @@ int evaluateExp(string expression){
 			// Push result
 			S.push(result);
 		}
-
 
 		// If s[i] is operand, push it. This works for multi digit numbers
 		else if(isNumericDigit(expression[i])){
