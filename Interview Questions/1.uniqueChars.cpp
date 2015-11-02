@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include <map>
+#include <unordered_map>
 using namespace std;
 
 // Determine if string has unique characters
@@ -24,7 +24,7 @@ int isUniqueChar(string str){
 	}
 	
 	// Char -> amount of times of the char
-	map<char,int> values;
+	unordered_map<char,int> values;
 
 	// Iterate over string
 	for(int i = 0; i < str.length(); i++){
@@ -33,7 +33,6 @@ int isUniqueChar(string str){
 			return 0;
 		}
 		values[str[i]]++;
-		
 	}
 
 	return 1;
