@@ -90,24 +90,21 @@ Node* findK2(Node * head, int k){
 }
 
 /* Iterative solution using two pointers. O(n) time*/
-Node* findK3(Node * head, int k){
-	Node* p1 = head;
-	Node* p2 = head;
+Node * findK3(Node * head, int k){
+	Node *p1 = head;
+	Node *p2 = head;
 
-	// Move p2 k ahead
-	for(int i=0; i< k-1; i++){
+	while(k>=0)
 		p2 = p2->next;
-	}
-	
-	// Move p1 and p2 at same speed until p2 hits end
+
 	while(p2->next != NULL){
-		p1 = p1->next;
 		p2 = p2->next;
+		p1 = p1->next;
 	}
 
 	return p1;
-}
 
+}
 
 
 

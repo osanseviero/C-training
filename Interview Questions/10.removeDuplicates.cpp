@@ -1,5 +1,5 @@
 #include <iostream>
-#include <map>
+#include <unordered_map>
 using namespace std;
 
 // Remove duplicates of unsorted linked list
@@ -43,28 +43,29 @@ void print(Node * head){
 }
 
 void deleteDuplicates(Node * head){
-	map<int,bool> table;
+	unordered_map<int,bool> table;
 	Node *curr = head;
-	Node *pre = NULL;
+	Node *prev = NULL;
 
 	while(curr != NULL){
-
-		// If it already is in the map
+		// Check if it is in the map
 		if(table[curr->data]){
-			pre->next = curr->next;
-			delete curr;
-			curr = pre->next;
+			prev->next = curr->next;
+			curr = prev->next;
 		}
-		// If it was not there
 		else{
 			table[curr->data] = true;
-			pre = curr;
+			prev = curr;
 			curr = curr->next;
 		}
+		
+
 	}
 
 
+
 }
+
 
 int main(){
 	Node * n1 = new Node(1);
