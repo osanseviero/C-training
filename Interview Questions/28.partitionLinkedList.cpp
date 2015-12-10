@@ -1,5 +1,5 @@
 #include <iostream>
-#include <stack>
+
 using namespace std;
 
 // Partition a linked list around a value n
