@@ -8,7 +8,7 @@ class StackWithMin{
 	stack<int> minS;
 
 
-	void push(int data){ I
+	void push(int data){ 
 		s.push(data);
 		if(minS.empty()){
 			minS.push(data);
