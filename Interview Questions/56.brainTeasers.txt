@@ -1,0 +1,12 @@
+Techniques
+	* Develop patterns and rules
+
+
+
+
+Example 1. You have two ropes, and each takes exactly one hour to burn. How would you use them
+to time exactly 15 minutes? Note that the ropes are of uneven densities, so half the rope
+length-wise does not necessarily take half an hour to burn.
+
+	If we burn one rope, it takes 1 hour.
+	If we burn one rope, and then the other one, it will take 2 hours.
