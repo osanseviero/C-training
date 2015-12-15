@@ -10,3 +10,60 @@ length-wise does not necessarily take half an hour to burn.
 
 	If we burn one rope, it takes 1 hour.
 	If we burn one rope, and then the other one, it will take 2 hours.
+	If we burn a rope in both ends, it takes 30 minutes to burn.
+	So we can measure 30 minutes.
+
+	We can burn one rope at both ends, and the other one at one end. Rope 1 will burn 30 minutes later.
+	We can the burn the other end of the second rope, so it will measure half the time. This way you can measure 15 minutes.
+
+Example 2. You have nine balls. Eight are of the same weight, and one is heavier. 
+You are given a balance which tells you only whether the left side or the right side is heavier. 
+Find the heavy ball in just two uses of the scale
+	
+	If we divide in 3 sets of 3, and then compare two sets, we know which set has the heavy one.
+	If we have a set of 3, we can compare two balls. This will tell us which is the heaviest.
+
+Example 3. You have 20 bottles of pills. 19 bottles have 1.0 gram pills, but one has pills of weight 1.1 grams. Given a scale that provides an exact measurement, how would you find the heavy bottle? You can only use the scale once
+
+
+	20 bottles of pills
+		* 19 weight 1 gram
+		* 1 weights 1.1 grams
+
+	You can only use the scale once
+		* If we put 1, it is based on luck
+		* If we put 10, we can discard half.
+		* We need to put more than one pill
+
+	We can put i pills for each i bottle.
+		* 1 for b1, 2 for b2, 3 for b3
+		* If b1 is heavier, 6.1, 
+		* If b2 is heavier 6.2
+		* If b3 is heavier, 6.3
+		* We expected 6. So 6.1-6= 0.1 That is for bottle 11
+
+	Expected weight: 210 grams
+	We take weight-expected. We multiply that by 10. This gives us the result
+
+
+Example 4. You have a five-quart jug, a three-quart jug, and an unlimited supply of water
+(but no measuring cups). How would you come up with exactly four quarts of
+water? Note that the jugs are oddly shaped, such that filling up exactly "half"of
+the jug would be impossible
+
+	* Fill the five-quart jug 	(5 0)
+	* Fill the three-quart jug with the water of the 5	(2 3)
+	* Clear the 3 (2 0)
+	* From 5 to 3 (0 2)
+	* Fill 5 (5 2)
+	* From 5 to 3 (4 2)
+
+Other problems
+	* The chess problem
+	* The two eggs and the 100 floors problem
+
+
+
+
+
+
