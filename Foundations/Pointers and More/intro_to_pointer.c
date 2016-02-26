@@ -6,7 +6,7 @@ int main(){
 
 	// Example 1. Pointer to an int
 	int n;	
-	int *p = &n; // Pointer to int
+	int *p; // Pointer to int
 	p = &n; // Now p is a pointer to n
 
 	// Example 2. Pointer to an address = pointer to an int

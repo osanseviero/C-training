@@ -20,10 +20,9 @@ int maxSubArray(const std::vector<int> &A) {
 	int temp = 0;
 
 	for(int i=0; i<A.size(); i++){
-	temp += A[i];
-	maxSum = std::max(maxSum, temp);
-	if(temp<0)
-		temp = 0;	
+		temp += A[i];
+		maxSum = std::max(maxSum, temp);
+		if(temp<0) temp = 0;	
 	}
 	return maxSum;
 }
